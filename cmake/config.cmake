@@ -144,6 +144,16 @@ set(USE_MICRO_STANDALONE_RUNTIME OFF)
 # - /path/to/llvm-config: enable specific LLVM when multiple llvm-dev is available.
 set(USE_LLVM OFF)
 
+# Whether build with MLIR support
+# Current MLIR version is 16.x
+#
+# Possible values:
+# - /path/to/MLIRConfig.cmake: enable mlir
+# - OFF: disable mlir
+# Note that this automatically enables LLVM support
+#
+set(USE_MLIR OFF)
+
 #---------------------------------------------
 # Contrib libraries
 #---------------------------------------------
